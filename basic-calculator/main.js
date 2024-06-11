@@ -20,8 +20,6 @@ buttonsData.forEach((row) => {
         onClick: () => handleButtonClick(buttonData)
     }));
 
-    console.log({ buttons });
-
     const rowInstance = new Row({ buttons });
     container.append(rowInstance.render());
 });
