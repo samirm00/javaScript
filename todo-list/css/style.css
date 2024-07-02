@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #333;
+    color: #201d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+header input:focus {
+    outline: none;
+}
+
+header input::placeholder {
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+ul#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#todo-list .todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+ul#todo-list .todo h3 {
+    margin: 0;
+    flex: 1;
+}
+
+ul#todo-list .todo input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    flex: 1;
+}
+
+ul#todo-list .todo button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #007bff;
+}
+
+ul#todo-list .todo button:hover {
+    color: #0056b3;
+}
+
+ul#todo-list .todo button:focus {
+    outline: none;
+}
+
+ul#todo-list .todo .fas {
+    font-size: 16px;
+}

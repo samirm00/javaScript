@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Todo List</title>
+    </head>
+    <body>
+        <div id="root">
+            <header>
+                <h1>Todo List</h1>
+                <input
+                    type="text"
+                    placeholder="Add a new todo"
+                    id="todo-input"
+                />
+            </header>
+            <main>
+                <ul id="todo-list"></ul>
+            </main>
+        </div>
+        <script type="module" src="./src/main.js"></script>
+    </body>
+</html>
